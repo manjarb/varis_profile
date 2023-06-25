@@ -1,0 +1,48 @@
+@import "./libs/bootstrap.min.css";
+@import "./normalize.css";
+@import "./color";
+@import "./spacing-helpers";
+
+body {
+  font-family: "Inter", sans-serif;
+  font-size: 16px;
+  scroll-behavior: smooth;
+  color: $text-gray;
+  background: #1f1f1f;
+  line-height: 1.7;
+  overflow-x: hidden;
+  height: 100vh;
+}
+
+a {
+  text-decoration: none;
+}
+
+.theme-btn {
+  background: $primary;
+  color: $black;
+  display: block;
+  text-align: center;
+  padding: 11px 58px 10px 58px;
+  display: inline-flex;
+  align-items: center;
+  border-radius: 30px;
+  justify-content: center;
+  text-transform: uppercase;
+  border: none;
+  transition: 0.3s;
+  cursor: pointer;
+  border: 2px solid $primary;
+
+  i {
+    font-size: 24px;
+    margin-right: 10px;
+    display: block;
+    margin-bottom: 3px;
+  }
+
+  &:hover {
+    background: none;
+    color: $primary;
+  }
+}
