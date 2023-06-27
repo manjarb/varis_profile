@@ -1,0 +1,15 @@
+.services-area {
+  padding-top: 90px;
+  padding-bottom: 90px;
+}
+
+.services-items {
+  .service-item {
+    border: 1px solid #565656;
+    border-radius: 20px;
+    transition: 0.3s;
+    position: relative;
+    padding: 44px 48px 41px 48px;
+    margin-bottom: 10px;
+  }
+}
