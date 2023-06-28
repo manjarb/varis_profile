@@ -1,0 +1,92 @@
+@import "../color";
+
+.menu {
+  flex-direction: column;
+  border: 1px solid $border-hero;
+  border-radius: 30px;
+  position: fixed;
+  right: 68px;
+  top: 322px;
+  /* width: 55px; */
+  text-align: center;
+  gap: 20px;
+  padding: 24px 0;
+  background: $bg-gray;
+  z-index: 20;
+
+  li {
+    list-style: none;
+
+    .scroll-to,
+    a {
+      display: block;
+      position: relative;
+      /* padding: 10px 10px; */
+      width: 55px;
+      transition: 0.3s;
+      color: $text-gray;
+      cursor: pointer;
+    }
+
+    a.active,
+    a:hover,
+    .scroll-to.active,
+    .scroll-to:hover {
+      color: $primary;
+    }
+
+    .scroll-to:hover span,
+    a:hover span {
+      opacity: 1;
+      visibility: visible;
+    }
+
+    .scroll-to i,
+    a i {
+      font-size: 20px;
+      display: block;
+    }
+
+    .scroll-to span,
+    a span {
+      position: absolute;
+      transition: 0.3s;
+      font-size: 12px;
+      background: $bg-gray-02;
+      right: 100%;
+      color: $white;
+      display: block;
+      padding: 3px 8px;
+      border-radius: 5px;
+      visibility: hidden;
+      opacity: 0;
+    }
+
+    .scroll-to span::before,
+    a span::before {
+      content: "";
+      width: 10px;
+      height: 10px;
+      background: $bg-gray-02;
+      position: absolute;
+      right: -3px;
+      top: 50%;
+      transform: rotate(54deg) skew(-8deg, -39deg);
+      margin-top: -5px;
+      z-index: -1;
+    }
+  }
+}
+
+@media (max-width: 2000px) {
+  .menu {
+    top: 50%;
+    transform: translateY(-50%);
+  }
+}
+
+@media (max-width: 1220px) {
+  .menu {
+    display: none !important;
+  }
+}
