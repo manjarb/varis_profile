@@ -88,3 +88,20 @@
     right: 20px;
   }
 }
+
+@media (max-width: 767px) {
+  .services-items {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+  }
+
+  .services-items .service-item {
+    width: 100%;
+  }
+}
+
+@media (max-width: 584px) {
+  .services-items {
+    grid-template-columns: 1fr;
+  }
+}

@@ -1,6 +1,10 @@
 @import "../color";
 @import "../fonts";
 
+.drake-main .left-sidebar {
+  display: none;
+}
+
 .left-sidebar {
   max-width: 485px;
   width: 100%;
@@ -133,5 +137,9 @@
     > img.me {
       width: auto;
     }
+  }
+
+  .drake-main .left-sidebar {
+    display: block;
   }
 }
