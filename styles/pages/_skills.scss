@@ -1,0 +1,51 @@
+@import "../color";
+
+.skills-area {
+  padding-top: 90px;
+  padding-bottom: 40px;
+}
+
+.skills {
+  .skill {
+    margin-bottom: 50px;
+
+    .skill-inner {
+      border: 2px solid $border-main;
+      border-radius: 85px;
+      padding: 54px 0 48px 0;
+      margin-bottom: 20px;
+      transition: 0.3s;
+      height: 188px;
+      display: flex;
+
+      img {
+        display: block;
+        margin: auto;
+      }
+
+      h1 {
+        font-size: 30px;
+        color: $primary;
+        font-weight: 300;
+        margin: 0;
+      }
+    }
+
+    &:hover .skill-inner {
+      border-color: $primary;
+    }
+
+    p {
+      font-size: 14px;
+      color: $white;
+      margin: 0;
+    }
+  }
+}
+
+@media (max-width: 767px) {
+  .skills-area .skills-content .row .col-md-3 {
+    flex: 0 0 auto;
+    width: 50%;
+  }
+}
